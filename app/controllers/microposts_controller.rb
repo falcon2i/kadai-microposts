@@ -1,5 +1,5 @@
 class MicropostsController < ApplicationController
-  before_action :require_user_logged_in
+  before_action :require_user_logged_in, only: [:followings, :followers]
   before_action :correct_user, only: [:destroy]
 
   def create
