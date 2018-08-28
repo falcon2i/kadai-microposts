@@ -10,7 +10,7 @@
     </aside>
     <div class="col-xs-8">
       <%= render 'microposts/microposts', microposts: @microposts %>
-      <%= link_to 'Go Likes', likes_user_path(@user) %>
+      <%= link_to 'Go Likes', likes_user_path(current_user) %>
     </div>
   </div>
 <% else %>
